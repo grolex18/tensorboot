@@ -1,0 +1,1002 @@
+background
+fish, tench, tinca tinca
+fish, goldfish, carassius auratus
+fish, great white shark, white shark, man-eater, man-eating shark, carcharodon carcharias
+fish, tiger shark, galeocerdo cuvieri
+fish, hammerhead, hammerhead shark
+fish, electric ray, crampfish, numbfish, torpedo
+fish, stingray
+bird, cock
+bird, hen
+bird, ostrich, struthio camelus
+bird, brambling, fringilla montifringilla
+bird, goldfinch, carduelis carduelis
+bird, house finch, linnet, carpodacus mexicanus
+bird, junco, snowbird
+bird, indigo bunting, indigo finch, indigo bird, passerina cyanea
+bird, robin, american robin, turdus migratorius
+bird, bulbul
+bird, jay
+bird, magpie
+bird, chickadee
+bird, water ouzel, dipper
+bird, kite
+bird, bald eagle, american eagle, haliaeetus leucocephalus
+bird, vulture
+bird, great grey owl, great gray owl, strix nebulosa
+animal, european fire salamander, salamandra
+animal, common newt, triturus vulgaris
+animal, eft
+animal, spotted salamander, ambystoma maculatum
+animal, axolotl, mud puppy, ambystoma mexicanum
+animal, bullfrog, rana catesbeiana
+animal, tree frog, tree-frog
+animal, tailed frog, bell toad, ribbed toad, tailed toad, ascaphus trui
+animal, loggerhead, loggerhead turtle, caretta caretta
+animal, leatherback turtle, leatherback, leathery turtle, dermochelys coriacea
+animal, mud turtle
+animal, terrapin
+animal, box turtle, box tortoise
+animal, banded gecko
+animal, common iguana, iguana, iguana iguana
+animal, american chameleon, anole, anolis carolinensis
+animal, whiptail, whiptail lizard
+animal, agama
+animal, frilled lizard, chlamydosaurus kingi
+animal, alligator lizard
+animal, gila monster, heloderma suspectum
+animal, green lizard, lacerta viridis
+animal, african chameleon, chamaeleo chamaeleon
+animal, komodo dragon, komodo lizard, dragon lizard, giant lizard, varanus komodoensis
+animal, african crocodile, nile crocodile, crocodylus niloticus
+animal, american alligator, alligator mississipiensis
+animal, triceratops
+snake, thunder snake, worm snake, carphophis amoenus
+snake, ringneck snake, ring-necked snake, ring snake
+snake, hognose snake, puff adder, sand viper
+snake, green snake, grass snake
+snake, king snake, kingsnake
+snake, garter snake, grass snake
+snake, water snake
+snake, vine snake
+snake, night snake, hypsiglena torquata
+snake, boa constrictor, constrictor constrictor
+snake, rock python, rock snake, python sebae
+snake, indian cobra, naja naja
+snake, green mamba
+snake, sea snake
+snake, horned viper, cerastes, sand viper, horned asp, cerastes cornutus
+snake, diamondback, diamondback rattlesnake, crotalus adamanteus
+snake, sidewinder, horned rattlesnake, crotalus cerastes
+animal, trilobite
+insect, harvestman, daddy longlegs, phalangium opilio
+insect, scorpion
+insect, black and gold garden spider, argiope aurantia
+insect, barn spider, araneus cavaticus
+insect, garden spider, aranea diademata
+insect, black widow, latrodectus mactans
+insect, tarantula
+insect, wolf spider, hunting spider
+insect, tick
+insect, centipede
+bird, black grouse
+bird, ptarmigan
+bird, ruffed grouse, partridge, bonasa umbellus
+bird, prairie chicken, prairie grouse, prairie fowl
+bird, peacock
+bird, quail
+bird, partridge
+bird, african grey, african gray, psittacus erithacus
+bird, macaw
+bird, sulphur-crested cockatoo, kakatoe galerita, cacatua galerita
+bird, lorikeet
+bird, coucal
+bird, bee eater
+bird, hornbill
+bird, hummingbird
+bird, jacamar
+bird, toucan
+bird, drake
+bird, red-breasted merganser, mergus serrator
+bird, goose
+bird, black swan, cygnus atratus
+animal, tusker
+animal, echidna, spiny anteater, anteater
+animal, platypus, duckbill, duckbilled platypus, duck-billed platypus, ornithorhynchus anatinus
+animal, wallaby, brush kangaroo
+animal, koala, koala bear, kangaroo bear, native bear, phascolarctos cinereus
+animal, wombat
+animal, jellyfish
+animal, sea anemone, anemone
+animal, brain coral
+animal, flatworm, platyhelminth
+animal, nematode, nematode worm, roundworm
+animal, conch
+animal, snail
+animal, slug
+animal, sea slug, nudibranch
+animal, chiton, coat-of-mail shell, sea cradle, polyplacophore
+animal, chambered nautilus, pearly nautilus, nautilus
+animal, dungeness crab, cancer magister
+animal, rock crab, cancer irroratus
+animal, fiddler crab
+animal, king crab, alaska crab, alaskan king crab, alaska king crab, paralithodes camtschatica
+animal, american lobster, northern lobster, maine lobster, homarus americanus
+animal, spiny lobster, langouste, rock lobster, crawfish, crayfish, sea crawfish
+animal, crayfish, crawfish, crawdad, crawdaddy
+animal, hermit crab
+animal, isopod
+bird, white stork, ciconia ciconia
+bird, black stork, ciconia nigra
+bird, spoonbill
+bird, flamingo
+bird, little blue heron, egretta caerulea
+bird, american egret, great white heron, egretta albus
+bird, bittern
+bird, crane
+bird, limpkin, aramus pictus
+bird, european gallinule, porphyrio porphyrio
+bird, american coot, marsh hen, mud hen, water hen, fulica americana
+bird, bustard
+bird, ruddy turnstone, arenaria interpres
+bird, red-backed sandpiper, dunlin, erolia alpina
+bird, redshank, tringa totanus
+bird, dowitcher
+bird, oystercatcher, oyster catcher
+bird, pelican
+bird, king penguin, aptenodytes patagonica
+bird, albatross, mollymawk
+animal, grey whale, gray whale, devilfish, eschrichtius gibbosus, eschrichtius robustus
+animal, killer whale, killer, orca, grampus, sea wolf, orcinus orca
+animal, dugong, dugong dugon
+animal, sea lion
+animal, dog, chihuahua
+animal, dog, japanese spaniel
+animal, dog, maltese dog, maltese terrier, maltese
+animal, dog, pekinese, pekingese, peke
+animal, dog, shih-tzu
+animal, dog, blenheim spaniel
+animal, dog, papillon
+animal, dog, toy terrier
+animal, dog, rhodesian ridgeback
+animal, dog, afghan hound, afghan
+animal, dog, basset, basset hound
+animal, dog, beagle
+animal, dog, bloodhound, sleuthhound
+animal, dog, bluetick
+animal, dog, black-and-tan coonhound
+animal, dog, walker hound, walker foxhound
+animal, dog, english foxhound
+animal, dog, redbone
+animal, dog, borzoi, russian wolfhound
+animal, dog, irish wolfhound
+animal, dog, italian greyhound
+animal, dog, whippet
+animal, dog, ibizan hound, ibizan podenco
+animal, dog, norwegian elkhound, elkhound
+animal, dog, otterhound, otter hound
+animal, dog, saluki, gazelle hound
+animal, dog, scottish deerhound, deerhound
+animal, dog, weimaraner
+animal, dog, staffordshire bullterrier, staffordshire bull terrier
+animal, dog, american staffordshire terrier, staffordshire terrier, american pit bull terrier, pit bull terrier
+animal, dog, bedlington terrier
+animal, dog, border terrier
+animal, dog, kerry blue terrier
+animal, dog, irish terrier
+animal, dog, norfolk terrier
+animal, dog, norwich terrier
+animal, dog, yorkshire terrier
+animal, dog, wire-haired fox terrier
+animal, dog, lakeland terrier
+animal, dog, sealyham terrier, sealyham
+animal, dog, airedale, airedale terrier
+animal, dog, cairn, cairn terrier
+animal, dog, australian terrier
+animal, dog, dandie dinmont, dandie dinmont terrier
+animal, dog, boston bull, boston terrier
+animal, dog, miniature schnauzer
+animal, dog, giant schnauzer
+animal, dog, standard schnauzer
+animal, dog, scotch terrier, scottish terrier, scottie
+animal, dog, tibetan terrier, chrysanthemum dog
+animal, dog, silky terrier, sydney silky
+animal, dog, soft-coated wheaten terrier
+animal, dog, west highland white terrier
+animal, dog, lhasa, lhasa apso
+animal, dog, flat-coated retriever
+animal, dog, curly-coated retriever
+animal, dog, golden retriever
+animal, dog, labrador retriever
+animal, dog, chesapeake bay retriever
+animal, dog, german short-haired pointer
+animal, dog, vizsla, hungarian pointer
+animal, dog, english setter
+animal, dog, irish setter, red setter
+animal, dog, gordon setter
+animal, dog, brittany spaniel
+animal, dog, clumber, clumber spaniel
+animal, dog, english springer, english springer spaniel
+animal, dog, welsh springer spaniel
+animal, dog, cocker spaniel, english cocker spaniel, cocker
+animal, dog, sussex spaniel
+animal, dog, irish water spaniel
+animal, dog, kuvasz
+animal, dog, schipperke
+animal, dog, groenendael
+animal, dog, malinois
+animal, dog, briard
+animal, dog, kelpie
+animal, dog, komondor
+animal, dog, old english sheepdog, bobtail
+animal, dog, shetland sheepdog, shetland sheep dog, shetland
+animal, dog, collie
+animal, dog, border collie
+animal, dog, bouvier des flandres, bouviers des flandres
+animal, dog, rottweiler
+animal, dog, german shepherd, german shepherd dog, german police dog, alsatian
+animal, dog, doberman, doberman pinscher
+animal, dog, miniature pinscher
+animal, dog, greater swiss mountain dog
+animal, dog, bernese mountain dog
+animal, dog, appenzeller
+animal, dog, entlebucher
+animal, dog, boxer
+animal, dog, bull mastiff
+animal, dog, tibetan mastiff
+animal, dog, french bulldog
+animal, dog, great dane
+animal, dog, saint bernard, st bernard
+animal, dog, eskimo dog, husky
+animal, dog, malamute, malemute, alaskan malamute
+animal, dog, siberian husky
+animal, dog, dalmatian, coach dog, carriage dog
+animal, dog, affenpinscher, monkey pinscher, monkey dog
+animal, dog, basenji
+animal, dog, pug, pug-dog
+animal, dog, leonberg
+animal, dog, newfoundland, newfoundland dog
+animal, dog, great pyrenees
+animal, dog, samoyed, samoyede
+animal, dog, pomeranian
+animal, dog, chow, chow chow
+animal, dog, keeshond
+animal, dog, brabancon griffon
+animal, dog, pembroke, pembroke welsh corgi
+animal, dog, cardigan, cardigan welsh corgi
+animal, dog, toy poodle
+animal, dog, miniature poodle
+animal, dog, standard poodle
+animal, dog, mexican hairless
+animal, timber wolf, grey wolf, gray wolf, canis lupus
+animal, white wolf, arctic wolf, canis lupus tundrarum
+animal, red wolf, maned wolf, canis rufus, canis niger
+animal, coyote, prairie wolf, brush wolf, canis latrans
+animal, dingo, warrigal, warragal, canis dingo
+animal, dhole, cuon alpinus
+animal, african hunting dog, hyena dog, cape hunting dog, lycaon pictus
+animal, hyena, hyaena
+animal, red fox, vulpes vulpes
+animal, kit fox, vulpes macrotis
+animal, arctic fox, white fox, alopex lagopus
+animal, grey fox, gray fox, urocyon cinereoargenteus
+animal, tabby, tabby cat
+animal, cat, tiger cat
+animal, cat, persian cat
+animal, cat, siamese cat, siamese
+animal, cat, egyptian cat
+animal, cougar, puma, catamount, mountain lion, painter, panther, felis concolor
+animal, lynx, catamount
+animal, leopard, panthera pardus
+animal, snow leopard, ounce, panthera uncia
+animal, jaguar, panther, panthera onca, felis onca
+animal, lion, king of beasts, panthera leo
+animal, tiger, panthera tigris
+animal, cheetah, chetah, acinonyx jubatus
+animal, brown bear, bruin, ursus arctos
+animal, american black bear, black bear, ursus americanus, euarctos americanus
+animal, ice bear, polar bear, ursus maritimus, thalarctos maritimus
+animal, sloth bear, melursus ursinus, ursus ursinus
+animal, mongoose
+animal, meerkat, mierkat
+insect, tiger beetle
+insect, ladybug, ladybeetle, lady beetle, ladybird, ladybird beetle
+insect, ground beetle, carabid beetle
+insect, long-horned beetle, longicorn, longicorn beetle
+insect, leaf beetle, chrysomelid
+insect, dung beetle
+insect, rhinoceros beetle
+insect, weevil
+insect, fly
+insect, bee
+insect, ant, emmet, pismire
+insect, grasshopper, hopper
+insect, cricket
+insect, walking stick, walkingstick, stick insect
+insect, cockroach, roach
+insect, mantis, mantid
+insect, cicada, cicala
+insect, leafhopper
+insect, lacewing, lacewing fly
+insect, dragonfly, darning needle, devil's darning needle, sewing needle, snake feeder, snake doctor, mosquito hawk, skeeter hawk
+insect, damselfly
+insect, admiral
+insect, ringlet, ringlet butterfly
+insect, monarch, monarch butterfly, milkweed butterfly, danaus plexippus
+insect, cabbage butterfly
+insect, sulphur butterfly, sulfur butterfly
+insect, lycaenid, lycaenid butterfly
+animal, starfish, sea star
+animal, sea urchin
+animal, sea cucumber, holothurian
+animal, wood rabbit, cottontail, cottontail rabbit
+animal, hare
+animal, angora, angora rabbit
+animal, hamster
+animal, porcupine, hedgehog
+animal, fox squirrel, eastern fox squirrel, sciurus niger
+animal, marmot
+animal, beaver
+animal, guinea pig, cavia cobaya
+animal, sorrel
+animal, zebra
+animal, hog, pig, grunter, squealer, sus scrofa
+animal, wild boar, boar, sus scrofa
+animal, warthog
+animal, hippopotamus, hippo, river horse, hippopotamus amphibius
+animal, ox
+animal, water buffalo, water ox, asiatic buffalo, bubalus bubalis
+animal, bison
+animal, ram, tup
+animal, bighorn, bighorn sheep, cimarron, rocky mountain bighorn, rocky mountain sheep, ovis canadensis
+animal, ibex, capra ibex
+animal, hartebeest
+animal, impala, aepyceros melampus
+animal, gazelle
+animal, arabian camel, dromedary, camelus dromedarius
+animal, llama
+animal, weasel
+animal, mink
+animal, polecat, fitch, foulmart, foumart, mustela putorius
+animal, black-footed ferret, ferret, mustela nigripes
+animal, otter
+animal, skunk, polecat, wood pussy
+animal, badger
+animal, armadillo
+animal, three-toed sloth, ai, bradypus tridactylus
+animal, orangutan, orang, orangutang, pongo pygmaeus
+animal, gorilla, gorilla gorilla
+animal, chimpanzee, chimp, pan troglodytes
+animal, gibbon, hylobates lar
+animal, siamang, hylobates syndactylus, symphalangus syndactylus
+animal, guenon, guenon monkey
+animal, patas, hussar monkey, erythrocebus patas
+animal, baboon
+animal, macaque
+animal, langur
+animal, colobus, colobus monkey
+animal, proboscis monkey, nasalis larvatus
+animal, marmoset
+animal, capuchin, ringtail, cebus capucinus
+animal, howler monkey, howler
+animal, titi, titi monkey
+animal, spider monkey, ateles geoffroyi
+animal, squirrel monkey, saimiri sciureus
+animal, madagascar cat, ring-tailed lemur, lemur catta
+animal, indri, indris, indri indri, indri brevicaudatus
+animal, indian elephant, elephas maximus
+animal, african elephant, loxodonta africana
+animal, lesser panda, red panda, panda, bear cat, cat bear, ailurus fulgens
+animal, giant panda, panda, panda bear, coon bear, ailuropoda melanoleuca
+fish, barracouta, snoek
+fish, eel
+fish, coho, cohoe, coho salmon, blue jack, silver salmon, oncorhynchus kisutch
+fish, rock beauty, holocanthus tricolor
+fish, anemone fish
+fish, sturgeon
+fish, gar, garfish, garpike, billfish, lepisosteus osseus
+fish, lionfish
+fish, puffer, pufferfish, blowfish, globefish
+abacus
+abaya
+academic gown, academic robe, judge's robe
+accordion, piano accordion, squeeze box
+acoustic guitar
+aircraft carrier, carrier, flattop, attack aircraft carrier
+airliner
+airship, dirigible
+altar
+ambulance
+amphibian, amphibious vehicle
+analog clock
+apiary, bee house
+apron
+ashcan, trash can, garbage can, wastebin, ash bin, ash-bin, ashbin, dustbin, trash barrel, trash bin
+assault rifle, assault gun
+backpack, back pack, knapsack, packsack, rucksack, haversack
+bakery, bakeshop, bakehouse
+balance beam, beam
+balloon
+ballpoint, ballpoint pen, ballpen, biro
+band aid
+banjo
+bannister, banister, balustrade, balusters, handrail
+barbell
+barber chair
+barbershop
+barn
+barometer
+barrel, cask
+barrow, garden cart, lawn cart, wheelbarrow
+baseball
+basketball
+bassinet
+bassoon
+bathing cap, swimming cap
+bath towel
+bathtub, bathing tub, bath, tub
+car, beach wagon, station wagon, wagon, estate car, beach waggon, station waggon, waggon
+beacon, lighthouse, beacon light, pharos
+beaker
+bearskin, busby, shako
+beer bottle
+beer glass
+bell cote, bell cot
+bib
+bicycle-built-for-two, tandem bicycle, tandem
+bikini, two-piece
+screen, binder, ring-binder
+binoculars, field glasses, opera glasses
+birdhouse
+boathouse
+bobsled, bobsleigh, bob
+bolo tie, bolo, bola tie, bola
+bonnet, poke bonnet
+bookcase
+bookshop, bookstore, bookstall
+bottlecap
+bow
+bow tie, bow-tie, bowtie
+screen, brass, memorial tablet, plaque
+brassiere, bra, bandeau
+breakwater, groin, groyne, mole, bulwark, seawall, jetty
+breastplate, aegis, egis
+broom
+bucket, pail
+buckle
+bulletproof vest
+bullet train, bullet
+butcher shop, meat market
+cab, hack, taxi, taxicab
+caldron, cauldron
+candle, taper, wax light
+cannon
+canoe
+can opener, tin opener
+cardigan
+car mirror
+carousel, carrousel, merry-go-round, roundabout, whirligig
+carpenter's kit, tool kit
+carton
+car, car wheel
+cash machine, cash dispenser, automated teller machine, automated teller, automatic teller, atm
+cassette
+cassette player
+castle
+catamaran
+cd player
+cello, violoncello
+cellular telephone, cellular phone, cellphone, cell, mobile phone
+chain
+chainlink fence
+chain mail, ring mail, mail, chain armor, chain armour, ring armor, ring armour
+chain saw, chainsaw
+chest
+chiffonier, commode
+chime, bell, gong
+china cabinet, china closet
+christmas stocking
+church, church building
+cinema, movie theater, movie theatre, movie house, picture palace
+cleaver, meat cleaver, chopper
+cliff dwelling
+cloak
+clog, geta, patten, sabot
+cocktail shaker
+coffee mug
+coffeepot
+coil, spiral, volute, whorl, helix
+combination lock
+computer keyboard, keypad
+confectionery, confectionary, candy store
+container ship, containership, container vessel
+car, convertible
+corkscrew, bottle screw
+cornet, horn, trumpet, trump
+cowboy boot
+cowboy hat, ten-gallon hat
+cradle
+crane
+crash helmet
+crate
+crib, cot
+crock pot
+croquet ball
+crutch
+cuirass
+dam, dike, dyke
+desk
+desktop computer
+dial telephone, dial phone
+diaper, nappy, napkin
+digital clock
+digital watch
+dining table, board
+dishrag, dishcloth
+dishwasher, dish washer, dishwashing machine
+disk brake, disc brake
+dock, dockage, docking facility
+dogsled, dog sled, dog sleigh
+dome
+doormat, welcome mat
+drilling platform, offshore rig
+drum, membranophone, tympan
+drumstick
+dumbbell
+dutch oven
+electric fan, blower
+electric guitar
+electric locomotive
+entertainment center
+screen, envelope
+espresso maker
+face powder
+feather boa, boa
+file, file cabinet, filing cabinet
+fireboat
+fire engine, fire truck
+fire screen, fireguard
+flagpole, flagstaff
+flute, transverse flute
+folding chair
+football helmet
+forklift
+fountain
+fountain pen
+four-poster
+car, freight car
+french horn, horn
+frying pan, frypan, skillet
+fur coat
+garbage truck, dustcart
+gasmask, respirator, gas helmet
+gas pump, gasoline pump, petrol pump, island dispenser
+goblet
+go-kart
+golf ball
+golfcart, golf cart
+gondola
+gong, tam-tam
+gown
+grand piano, grand
+greenhouse, nursery, glasshouse
+grille, radiator grille
+grocery store, grocery, food market, market
+guillotine
+hair slide
+hair spray
+half track
+hammer
+hamper
+hand blower, blow dryer, blow drier, hair dryer, hair drier
+hand-held computer, hand-held microcomputer
+screen, handkerchief, hankie, hanky, hankey
+hard disc, hard disk, fixed disk
+harmonica, mouth organ, harp, mouth harp
+harp
+harvester, reaper
+hatchet
+holster
+home theater, home theatre
+honeycomb
+hook, claw
+hoopskirt, crinoline
+horizontal bar, high bar
+horse cart, horse-cart
+hourglass
+ipod
+iron, smoothing iron
+jack-o'-lantern
+jean, blue jean, denim
+jeep, landrover
+jersey, t-shirt, tee shirt
+jigsaw puzzle
+jinrikisha, ricksha, rickshaw
+joystick
+kimono
+knee pad
+knot
+lab coat, laboratory coat
+ladle
+lampshade, lamp shade
+laptop, laptop computer
+lawn mower, mower
+lens cap, lens cover
+letter opener, paper knife, paperknife
+library
+lifeboat
+lighter, light, igniter, ignitor
+limousine, limo
+liner, ocean liner
+lipstick, lip rouge
+loafer
+lotion
+loudspeaker, speaker, speaker unit, loudspeaker system, speaker system
+loupe, jeweler's loupe
+lumbermill, sawmill
+magnetic compass
+mailbag, postbag
+mailbox, letter box
+maillot
+maillot, tank suit
+manhole cover
+maraca
+marimba, xylophone
+mask
+matchstick
+maypole
+maze, labyrinth
+measuring cup
+medicine chest, medicine cabinet
+megalith, megalithic structure
+microphone, mike
+microwave, microwave oven
+military uniform
+milk can
+car, minibus
+miniskirt, mini
+car, minivan
+missile
+mitten
+mixing bowl
+mobile home, manufactured home
+model t
+modem
+monastery
+screen, monitor
+moped
+mortar
+mortarboard
+mosque
+mosquito net
+motor scooter, scooter
+mountain bike, all-terrain bike, off-roader
+mountain tent
+mouse, computer mouse
+mousetrap
+moving van
+muzzle
+nail
+neck brace
+necklace
+nipple
+notebook, notebook computer
+obelisk
+oboe, hautboy, hautbois
+ocarina, sweet potato
+odometer, hodometer, mileometer, milometer
+oil filter
+organ, pipe organ
+oscilloscope, cathode-ray oscilloscope, cro
+overskirt
+oxcart
+oxygen mask
+packet
+paddle, boat paddle
+paddlewheel, paddle wheel
+padlock
+paintbrush
+pajama, pyjama, pj's, jammies
+palace
+panpipe, pandean pipe, syrinx
+paper towel
+parachute, chute
+parallel bars, bars
+park bench
+parking meter
+car, passenger car, coach, carriage
+patio, terrace
+pay-phone, pay-station
+pedestal, plinth, footstall
+pencil box, pencil case
+pencil sharpener
+perfume, essence
+petri dish
+photocopier
+pick, plectrum, plectron
+pickelhaube
+picket fence, paling
+pickup, pickup truck
+pier
+piggy bank, penny bank
+pill bottle
+pillow
+ping-pong ball
+pinwheel
+pirate, pirate ship
+pitcher, ewer
+plane, carpenter's plane, woodworking plane
+planetarium
+plastic bag
+plate rack
+plow, plough
+plunger, plumber's helper
+polaroid camera, polaroid land camera
+pole
+police van, police wagon, paddy wagon, patrol wagon, wagon, black maria
+poncho
+pool table, billiard table, snooker table
+pop bottle, soda bottle
+pot, flowerpot
+potter's wheel
+power drill
+prayer rug, prayer mat
+printer
+prison, prison house
+projectile, missile
+projector
+puck, hockey puck
+punching bag, punch bag, punching ball, punchball
+purse
+quill, quill pen
+quilt, comforter, comfort, puff
+car, racer, race car, racing car
+racket, racquet
+radiator
+radio, wireless
+radio telescope, radio reflector
+rain barrel
+car, recreational vehicle, rv, r.v.
+reel
+reflex camera
+refrigerator, icebox
+remote control, remote
+restaurant, eating house, eating place, eatery
+revolver, six-gun, six-shooter
+rifle
+rocking chair, rocker
+rotisserie
+rubber eraser, rubber, pencil eraser
+rugby ball
+screen, rule, ruler
+running shoe
+safe
+safety pin
+saltshaker, salt shaker
+sandal
+sarong
+sax, saxophone
+scabbard
+scale, weighing machine
+car, school bus
+schooner
+scoreboard
+screen, screen
+screw
+screwdriver
+seat belt, seatbelt
+sewing machine
+shield, buckler
+shoe shop, shoe-shop, shoe store
+shoji
+shopping basket
+shopping cart
+shovel
+shower cap
+shower curtain
+ski
+ski mask
+sleeping bag
+slide rule, slipstick
+sliding door
+slot, one-armed bandit
+snorkel
+snowmobile
+snowplow, snowplough
+soap dispenser
+soccer ball
+sock
+solar dish, solar collector, solar furnace
+sombrero
+soup bowl
+space bar
+space heater
+space shuttle
+spatula
+speedboat
+spider web, spider's web
+spindle
+car, sports car, sport car
+spotlight, spot
+stage
+steam locomotive
+steel arch bridge
+steel drum
+stethoscope
+stole
+stone wall
+stopwatch, stop watch
+stove
+strainer
+streetcar, tram, tramcar, trolley, trolley car
+stretcher
+studio couch, day bed
+stupa, tope
+submarine, pigboat, sub, u-boat
+suit, suit of clothes
+sundial
+sunglass
+sunglasses, dark glasses, shades
+sunscreen, sunblock, sun blocker
+suspension bridge
+swab, swob, mop
+sweatshirt
+swimming trunks, bathing trunks
+swing
+switch, electric switch, electrical switch
+syringe
+table lamp
+tank, army tank, armored combat vehicle, armoured combat vehicle
+tape player
+teapot
+teddy, teddy bear
+television, television system
+tennis ball
+thatch, thatched roof
+theater curtain, theatre curtain
+thimble
+thresher, thrasher, threshing machine
+throne
+tile roof
+toaster
+tobacco shop, tobacconist shop, tobacconist
+toilet seat
+torch
+totem pole
+car, tow truck, tow car, wrecker
+toyshop
+tractor
+car, trailer truck, tractor trailer, trucking rig, rig, articulated lorry, semi
+tray
+trench coat
+tricycle, trike, velocipede
+trimaran
+tripod
+triumphal arch
+trolleybus, trolley coach, trackless trolley
+trombone
+tub, vat
+turnstile
+typewriter keyboard
+umbrella
+unicycle, monocycle
+upright, upright piano
+vacuum, vacuum cleaner
+vase
+vault
+velvet
+vending machine
+vestment
+viaduct
+violin, fiddle
+volleyball
+waffle iron
+wall clock
+wallet, billfold, notecase, pocketbook
+wardrobe, closet, press
+warplane, military plane
+washbasin, handbasin, washbowl, lavabo, wash-hand basin
+washer, automatic washer, washing machine
+water bottle
+water jug
+water tower
+whiskey jug
+whistle
+wig
+screen, window screen
+window shade
+windsor tie
+wine bottle
+wing
+wok
+wooden spoon
+wool, woolen, woollen
+worm fence, snake fence, snake-rail fence, virginia fence
+wreck
+yawl
+yurt
+screen, website
+comic book
+crossword puzzle, crossword
+street sign
+traffic light, traffic signal, stoplight
+book jacket, dust cover, dust jacket, dust wrapper
+screen, menu
+plate
+food, guacamole
+food, consomme, soup
+food, hot pot, hotpot
+food, trifle
+food, ice cream, icecream
+food, ice lolly, lolly, lollipop, popsicle
+food, french loaf
+food, bagel, beigel
+food, pretzel
+food, cheeseburger
+food, hotdog, hot dog, red hot
+food, mashed potato
+vegetable, head cabbage
+vegetable, broccoli
+vegetable, cauliflower
+vegetable, zucchini, courgette
+vegetable, spaghetti squash
+vegetable, acorn squash
+vegetable, butternut squash
+vegetable, cucumber, cuke
+vegetable, artichoke, globe artichoke
+vegetable, bell pepper
+cardoon
+mushroom
+fruit, granny smith
+fruit, strawberry
+fruit, orange
+fruit, lemon
+fruit, fig
+fruit, pineapple, ananas
+fruit, banana
+fruit, jackfruit, jak, jack
+fruit, custard apple
+fruit, pomegranate
+hay
+food, pasta, carbonara
+food, chocolate sauce, chocolate syrup
+food, dough
+food, meat loaf, meatloaf
+food, pizza, pizza pie
+food, potpie
+food, burrito
+food, red wine
+food, espresso
+cup mug
+food, eggnog
+alp
+bubble
+cliff, drop, drop-off
+coral reef
+geyser
+water, lakeside, lakeshore
+water, promontory, headland, head, foreland
+water, sandbar, sand bar
+water, seashore, coast, seacoast, sea-coast
+valley, vale
+volcano
+ballplayer, baseball player
+wedding, groom, bridegroom
+scuba diver
+rapeseed
+flower, daisy
+flower, yellow lady's slipper, yellow lady-slipper, cypripedium calceolus, cypripedium parviflorum
+corn
+acorn
+hip, rose hip, rosehip
+buckeye, horse chestnut, conker
+mushroom, coral fungus
+mushroom, agaric
+mushroom, gyromitra
+mushroom, stinkhorn, carrion fungus
+mushroom, earthstar
+mushroom, hen-of-the-woods, hen of the woods, polyporus frondosus, grifola frondosa
+bolete
+ear, spike, capitulum
+toilet tissue, toilet paper, bathroom tissue
+face, human

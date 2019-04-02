@@ -10,11 +10,16 @@ To build the project, you need to have these installed:
 ```sh
 $ ./downlod_model.sh
 ```
-Model will be stored under [model](model/) folder.
+Model will be stored under [model](/model/) folder.
+
+Also you can use *downloadModel* maven profile to download model during build:
+```sh
+$ ./mvnw clean install -PdownloadModel
+```
 
 ## Build project
 
-To build the project run
+To build the project, run:
 
 ```sh
 $ ./mvnw clean install

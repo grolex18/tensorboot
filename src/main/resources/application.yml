@@ -1,0 +1,28 @@
+services:
+  baseApiPath: /TensorApi
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      resolve-lazily: true
+      max-file-size: 1512KB
+      max-request-size: 1512KB
+
+tensorboot:
+  model:
+    path: model/mobilenet_v2_1.4_224_frozen.pb
+    inputSize: 224
+    imageMean: 0
+    imageStd: 255
+    inputLayerName: input
+    outputLayerName: MobilenetV2/Predictions/Reshape_1
+    labelsResource: classpath:/mobilenet_v2_labels.txt
+    threshold: 0.1
+  previewSize: 320
+  maxExecutorsCount: 10
+
+server:
+  servlet:
+    session:
+      timeout: 2m # Session timeout in seconds.

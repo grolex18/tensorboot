@@ -1,0 +1,35 @@
+<html xmlns:th="http://www.thymeleaf.org">
+<head>
+    <title>TensorFlow demo SpringBoot application</title>
+</head>
+<body>
+<h1>TensorFlow demo SpringBoot application</h1>
+
+<div th:if="${message}">
+    <h2 th:text="${message}" />
+</div>
+
+<div>
+    <form method="POST" enctype="multipart/form-data" action="/uploadForm">
+        <table>
+            <tr><td>Choose image to upload (max. 1.5M):</td><td><input type="file" name="file" required /></td></tr>
+            <tr><td></td><td><input type="submit" value="Upload" /></td></tr>
+        </table>
+    </form>
+</div>
+<hr />
+<div th:if="${recognitions}">
+    <div>Uploaded image:</div>
+    <img src="/img" />
+    <hr />
+</div>
+
+<div th:if="${recognitions}">
+    Found objects:
+    <ul th:each="r : ${recognitions}">
+        <li th:text="${r.name} + ' : ' + ${r.confidence}" />
+    </ul>
+</div>
+
+</body>
+</html>
