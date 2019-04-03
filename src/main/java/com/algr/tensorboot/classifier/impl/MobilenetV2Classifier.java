@@ -26,7 +26,7 @@ import lombok.extern.log4j.Log4j2;
 public class MobilenetV2Classifier implements Classifier {
     private static final int BYTES_IN_MB = 1024 * 1024;
 
-    private ModelConfig modelConfig;
+    private final ModelConfig modelConfig;
     private Graph model;
     private List<String> labels;
 
@@ -59,18 +59,18 @@ public class MobilenetV2Classifier implements Classifier {
     }
 
     private float[] runSession(BufferedImage image, Graph model) {
-        List<Tensor<?>> outputs;
         try (Session session = new Session(model);
              Tensor<Float> input = ImageUtil.makeImageTensor(image, modelConfig.getImageMean(), modelConfig.getImageStd())) {
-            outputs = session
-                    .runner()
-                    .feed(modelConfig.getInputLayerName(), input)
-                    .fetch(modelConfig.getOutputLayerName())
-                    .run();
-        }
-        try (Tensor<Float> classesT = outputs.get(0).expect(Float.class)) {
-            int maxObjects = (int) classesT.shape()[1];
-            return classesT.copyTo(new float[1][maxObjects])[0];
+            List<Tensor<?>> outputs =
+                    session
+                            .runner()
+                            .feed(modelConfig.getInputLayerName(), input)
+                            .fetch(modelConfig.getOutputLayerName())
+                            .run();
+            try (Tensor<Float> classesT = outputs.get(0).expect(Float.class)) {
+                int maxObjects = (int) classesT.shape()[1];
+                return classesT.copyTo(new float[1][maxObjects])[0];
+            }
         }
     }
 

@@ -3,6 +3,7 @@ package com.algr.tensorboot.controller;
 import javax.imageio.ImageIO;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.validation.ConstraintViolationException;
 import java.awt.image.BufferedImage;
 import java.io.IOException;
 import java.util.List;
@@ -53,7 +54,7 @@ public class TensorBootController {
     }
 
     @RequestMapping(value = "/uploadForm", method = RequestMethod.POST)
-    public String handleUploadForm(@RequestParam("file") MultipartFile file, Model model, HttpServletRequest httpServletRequest) {
+    public String handleUploadForm(@RequestParam(value = "file") MultipartFile file, Model model, HttpServletRequest httpServletRequest) {
         log.debug("Image upload requested");
         RecognitionResult recognitionResult = imageProcessingService.processImageFile(file);
         List<Recognition> recognitions = recognitionResult.getRecognitions();
@@ -70,19 +71,23 @@ public class TensorBootController {
 
     @ExceptionHandler(RuntimeException.class)
     public ModelAndView doResolveException(RuntimeException e) {
-        ModelAndView modelAndView;
         if (e instanceof MaxUploadSizeExceededException) {
-            modelAndView = new ModelAndView("uploadForm");
-            modelAndView.getModel().put("message", "File is too large");
+            return getModelAndView("uploadForm", "File is too large");
+        } else if (e instanceof ConstraintViolationException) {
+            return getModelAndView("uploadForm", "Malformed request: " + e.getMessage());
         } else if (e instanceof ServiceException) {
             log.info("Error during processing request", e);
-            modelAndView = new ModelAndView("uploadForm");
-            modelAndView.getModel().put("message", e.getMessage());
+            return getModelAndView("uploadForm", e.getMessage());
         } else {
             log.info("Error during processing request", e);
-            modelAndView = new ModelAndView("error");
-            modelAndView.getModel().put("message", "Internal server error");
+            return getModelAndView("error", "Internal server error");
         }
+    }
+
+    private ModelAndView getModelAndView(String uploadForm, String s) {
+        ModelAndView modelAndView;
+        modelAndView = new ModelAndView(uploadForm);
+        modelAndView.getModel().put("message", s);
         return modelAndView;
     }
 }

@@ -34,22 +34,29 @@ public class ImageProcessingService {
     }
 
     public RecognitionResult processImageFile(MultipartFile file) {
+        if (file == null) {
+            throw new ServiceException("Failed reading image file");
+        }
         BufferedImage image = null;
         try {
             image = ImageIO.read(file.getInputStream());
+            if (image == null) {
+                throw new ServiceException("Failed reading image file");
+            }
+            List<Recognition> recognitions = classifier.processImage(image);
+            BufferedImage imagePreview = getImagePreview(image);
+            return new RecognitionResult(imagePreview, recognitions);
         } catch (IOException e) {
             log.info("Error during reading file input stream", e);
+            return new RecognitionResult();
+        } finally {
+            if (image != null) {
+                image.flush();
+            }
         }
-        if (image == null) {
-            throw new ServiceException("Failed reading image file");
-        }
-
-        List<Recognition> recognitions = classifier.processImage(image);
-
-        return new RecognitionResult(getScaledImage(image), recognitions);
     }
 
-    private BufferedImage getScaledImage(BufferedImage image) {
+    private BufferedImage getImagePreview(BufferedImage image) {
         int width = image.getWidth();
         int height = image.getHeight();
         float scale = (float) previewSize / width;
