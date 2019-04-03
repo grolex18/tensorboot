@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+DIR=$PWD
+export JAVA_HOME=$DIR/.java-buildpack/open_jdk_jre
+cd lib
+$DIR/.java-buildpack/open_jdk_jre/bin/java -jar spring-boot-tensorboot.jar

@@ -2,11 +2,16 @@
 Demo application that deploys TensorFlow models as a SpringBoot microservice. 
 Exposes REST services (with Swagger html docs) and simple web page for image recognition using [MobilenetV2](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet) pretrained model. 
 
+
+<img src="https://github.com/Grolex18/tensorboot/blob/master/img/Screen1.png" width="300">
+<img src="https://github.com/Grolex18/tensorboot/blob/master/img/Screen2.png" width="300">
+
 ## Prerequisites
 To build the project, you need to have these installed:
    JDK 8+ - download it from [here](https://www.oracle.com/technetwork/java/javase/downloads/).
 
 ## Download model
+*Required before builds/deployment*
 ```sh
 $ ./downlod_model.sh
 ```
@@ -55,8 +60,42 @@ All REST services have their definitions exposed using Swagger. Once the demo is
 Application is configured to log to console and into file.
 You can find daily rolling log files under "log" folder.
 
+## Application configuration file
+Application is configured in [application.yml](src/main/resources/application.yml):
+
+```yaml
+services:
+  baseApiPath: /TensorApi                                            # Application services context path
+
+spring:
+  servlet:
+    multipart:
+      enabled: true
+      resolve-lazily: true
+      max-file-size: 1512KB                                          # Upload file size limit
+      max-request-size: 1512KB                                       # Upload request size limit
+
+tensorboot:
+  model:
+    path: model/mobilenet_v2_1.4_224_frozen.pb                       # Path to model file
+    inputSize: 224                                                   # The input size. A square image of inputSize x inputSize is assumed.
+    imageMean: 0                                                     # The assumed mean of the image values. 
+    imageStd: 255                                                    # The assumed std of the image values.
+    inputLayerName: input                                            # The label of the image input node.
+    outputLayerName: MobilenetV2/Predictions/Reshape_1               # The label of the output node.
+    labelsResource: classpath:/mobilenet_v2_labels.txt               # Path to resource with labels
+    threshold: 0.1                                                   # Object detection threshold
+  previewSize: 320                                                   # Width of the previews
+  maxExecutorsCount: 10                                              # Executors pool size for images processing
+
+server:
+  servlet:
+    session:
+      timeout: 2m                                                    # Timeout for storing uploaded image previews in sessions 
+```
+
 # Deploy as Docker container
-Build container using profile 'docker':
+Build container using profile *docker*:
 
 ```sh
 $ ./mvnw clean package -Pdocker
@@ -71,4 +110,70 @@ Or you can use script (by default, services are exposed on port 8081):
 
 ```sh
 $ ./run-docker.sh
+```
+
+## Deploy to Heroku
+
+**Note that app is memory intensive, so free nodes will complain**
+
+Login cli to Heroku: 
+```sh
+$ heroku login
+```
+Create app:
+```sh
+$ heroku create
+```
+Rename app:
+```sh
+$ heroku apps:rename tensorboot
+```
+Limit memory (optional for free account)
+```sh
+$ heroku config:set JAVA_TOOL_OPTIONS="-Xmx300m"
+```
+Deploy app to Heroku:
+```sh
+$ ./mvnw clean heroku:deploy
+```
+Check app logs:
+```sh
+$ heroku logs --tail
+```
+
+
+## Deploying to Pivotal Cloud Foundry
+
+Build application distribution zip:
+```sh
+$ ./mvnw clean package -PdistZip
+```
+
+Login cli to Cloud Foundry:
+
+```sh
+$ cf login -a https://api.run.pivotal.io
+API endpoint: https://api.run.pivotal.io
+
+Email> <YOUR EMAIL>
+
+Password> 
+Authenticating...
+OK
+...
+```
+
+Push application:
+```sh
+$ cf push 
+```
+
+Check application status:
+```sh
+$ cf apps 
+```
+
+Delete application:
+```sh
+$ cf delete tensorboot 
 ```

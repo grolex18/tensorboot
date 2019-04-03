@@ -23,6 +23,8 @@
 		<commons-io.version>2.5</commons-io.version>
 		<maven-failsafe-plugin.version>2.13</maven-failsafe-plugin.version>
 		<skipITs>false</skipITs>
+		<heroku-maven-plugin.version>2.0.7</heroku-maven-plugin.version>
+		<maven-assembly-plugin.version>2.6</maven-assembly-plugin.version>
 	</properties>
 
 	<dependencies>
@@ -114,7 +116,24 @@
 		</dependency>
 	</dependencies>
 	<build>
+		<finalName>${project.artifactId}</finalName>
 		<plugins>
+			<plugin>
+				<groupId>com.heroku.sdk</groupId>
+				<artifactId>heroku-maven-plugin</artifactId>
+				<version>${heroku-maven-plugin.version}</version>
+				<configuration>
+					<appName>tensorboot</appName>
+					<includeTarget>false</includeTarget>
+					<processTypes>
+						<web>java -Dserver.port=$PORT $JAVA_OPTS -jar target/${project.artifactId}.jar</web>
+					</processTypes>
+					<includes>
+						<include>model/mobilenet_v2_1.4_224_frozen.pb</include>
+						<include>target/tensorboot.jar</include>
+					</includes>
+				</configuration>
+			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-failsafe-plugin</artifactId>
@@ -145,6 +164,29 @@
 		</plugins>
 	</build>
 	<profiles>
+		<profile>
+			<id>distZip</id>
+			<build>
+				<plugins>
+					<plugin>
+						<artifactId>maven-assembly-plugin</artifactId>
+						<version>${maven-assembly-plugin.version}</version>
+						<configuration>
+							<descriptor>src/assembly/package.xml</descriptor>
+						</configuration>
+						<executions>
+							<execution>
+								<id>prepare-deployment-package</id>
+								<phase>package</phase>
+								<goals>
+									<goal>single</goal>
+								</goals>
+							</execution>
+						</executions>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
 		<profile>
 			<id>downloadModel</id>
 			<build>

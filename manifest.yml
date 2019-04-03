@@ -1,0 +1,9 @@
+# Manifest for PCF deployment
+---
+applications:
+- name: tensorboot
+  path: target/tensorboot-dist.zip
+  buildpacks:
+    - java_buildpack
+  memory: 768M
+  instances: 1
