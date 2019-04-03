@@ -177,3 +177,10 @@ Delete application:
 ```sh
 $ cf delete tensorboot 
 ```
+
+
+## TODO
+
+- More model options (text, audio, video examples)
+- Use browser camera to catch photos/audio/video
+- Add more configuration options and restrictions to simplify production deployment
