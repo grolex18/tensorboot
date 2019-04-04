@@ -1,8 +1,11 @@
 <html xmlns:th="http://www.thymeleaf.org">
 <head>
     <title>TensorFlow demo SpringBoot application</title>
+    <script type="text/javascript" src="js/webcam.min.js"></script>
+    <script type="text/javascript" src="js/demo.js"></script>
 </head>
 <body>
+
 <h1>TensorFlow demo SpringBoot application</h1>
 
 <div th:if="${message}">
@@ -17,7 +20,7 @@
         </table>
     </form>
 </div>
-<hr />
+<hr th:if="${recognitions}" />
 <div th:if="${recognitions}">
     <div>Uploaded image:</div>
     <img src="/img" />
@@ -29,6 +32,24 @@
     <ul th:each="r : ${recognitions}">
         <li th:text="${r.name} + ' : ' + ${r.confidence}" />
     </ul>
+</div>
+<hr />
+
+<div>
+    <table>
+        <tr><td colspan="2">Upload screenshot from webcam (need to allow access to webcam):</td></tr>
+        <tr><td colspan="2">
+            <input type="button" onclick="configure()" value="Enable camera" />
+            <input type="button" onclick="take_snapshot()" value="Take snapshot" />
+            <input type="button" onclick="saveSnap()" value="Upload snapshot" />
+        </td></tr>
+        <tr><td>
+            <div id="my_camera"></div></td><td colspan="2"><div id="snapshot"></div>
+        </td></tr>
+        <tr><td colspan="2">
+            <div id='recognitions'></div>
+        </td></tr>
+    </table>
 </div>
 
 </body>

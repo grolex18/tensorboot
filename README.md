@@ -1,7 +1,9 @@
 # TensorBoot project
 Demo application that deploys TensorFlow models as a SpringBoot microservice. 
-Exposes REST services (with Swagger html docs) and simple web page for image recognition using [MobilenetV2](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet) pretrained model. 
+Exposes REST services (with Swagger html docs) and simple web page for image recognition using 
+[MobilenetV2](https://github.com/tensorflow/models/tree/master/research/slim/nets/mobilenet) pretrained model. 
 
+Contains examples of image file upload using form and how to use browser webcam and call REST service using javascript.
 
 <img src="https://github.com/Grolex18/tensorboot/blob/master/img/Screen1.png" width="300">
 <img src="https://github.com/Grolex18/tensorboot/blob/master/img/Screen2.png" width="300">
