@@ -10,6 +10,7 @@ import org.springframework.stereotype.Component;
 import org.springframework.web.multipart.MultipartFile;
 
 import com.algr.tensorboot.classifier.Classifier;
+import com.algr.tensorboot.classifier.impl.MobilenetV2Classifier;
 import com.algr.tensorboot.classifier.impl.PooledClassifier;
 import com.algr.tensorboot.controller.error.ServiceException;
 import com.algr.tensorboot.data.Recognition;
@@ -21,15 +22,15 @@ import lombok.extern.log4j.Log4j2;
 @Component
 public class ImageProcessingService {
 
-    private final Classifier classifier;
+    private final Classifier<BufferedImage, List<Recognition>> classifier;
     private final int previewSize;
 
     @Autowired
-    public ImageProcessingService(Classifier classifier,
+    public ImageProcessingService(MobilenetV2Classifier classifier,
                                   @Value("${tensorboot.maxExecutorsCount}") int maxExecutorsCount,
                                   @Value("${tensorboot.previewSize}") int previewSize
     ) {
-        this.classifier = new PooledClassifier(classifier, maxExecutorsCount);
+        this.classifier = new PooledClassifier<>(classifier, maxExecutorsCount);
         this.previewSize = previewSize;
     }
 
@@ -43,7 +44,7 @@ public class ImageProcessingService {
             if (image == null) {
                 throw new ServiceException("Failed reading image file");
             }
-            List<Recognition> recognitions = classifier.processImage(image);
+            List<Recognition> recognitions = classifier.classify(image);
             BufferedImage imagePreview = getImagePreview(image);
             return new RecognitionResult(imagePreview, recognitions);
         } catch (IOException e) {

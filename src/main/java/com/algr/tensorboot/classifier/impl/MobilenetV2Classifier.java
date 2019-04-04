@@ -11,23 +11,22 @@ import org.apache.commons.io.FileUtils;
 import org.apache.commons.io.IOUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Component;
-import org.tensorflow.Graph;
-import org.tensorflow.Session;
 import org.tensorflow.Tensor;
 
-import com.algr.tensorboot.classifier.Classifier;
 import com.algr.tensorboot.config.ModelConfig;
 import com.algr.tensorboot.data.Recognition;
 import com.algr.tensorboot.util.ImageUtil;
 import lombok.extern.log4j.Log4j2;
 
+/**
+ * Mobilenet V2 classifier implementation.
+ */
 @Log4j2
 @Component
-public class MobilenetV2Classifier implements Classifier {
+public class MobilenetV2Classifier extends AbstractClassifier<BufferedImage, List<Recognition>, Float> {
     private static final int BYTES_IN_MB = 1024 * 1024;
 
     private final ModelConfig modelConfig;
-    private Graph model;
     private List<String> labels;
 
     @Autowired
@@ -36,42 +35,32 @@ public class MobilenetV2Classifier implements Classifier {
     }
 
     @PostConstruct
-    public void init() throws IOException {
-        byte[] graphDef = FileUtils.readFileToByteArray(new File(modelConfig.getModelPath()));
-        model = new Graph();
-        model.importGraphDef(graphDef);
+    public void setup() {
+        try {
+            byte[] graphBytes = FileUtils.readFileToByteArray(new File(modelConfig.getModelPath()));
+            init(graphBytes, modelConfig.getInputLayerName(), modelConfig.getOutputLayerName());
 
-        List<String> labelsList = IOUtils.readLines(modelConfig.getLabelsResource().getInputStream(), "UTF-8");
-        labels = new ArrayList<>(labelsList);
-        log.info("Initialized Tensorflow model ({}MB)", graphDef.length / BYTES_IN_MB);
+            List<String> labelsList = IOUtils.readLines(modelConfig.getLabelsResource().getInputStream(), "UTF-8");
+            labels = new ArrayList<>(labelsList);
+            log.info("Initialized Tensorflow model ({}MB)", graphBytes.length / BYTES_IN_MB);
+        } catch (IOException e) {
+            log.error("Error during classifier initialization:", e);
+        }
     }
 
     @Override
-    public List<Recognition> processImage(BufferedImage image) {
-        log.trace("Started image processing");
+    protected Tensor<Float> getInputTensor(BufferedImage image) {
         BufferedImage croppedImage = ImageUtil.cropImageToRect(image);
         BufferedImage scaledImage = ImageUtil.scaleImage(croppedImage, modelConfig.getInputSize(), modelConfig.getInputSize());
-        log.trace("Started inference");
-        float[] output = runSession(scaledImage, model);
-        List<Recognition> recognitions = convertToRecognitions(output);
-        log.trace("Finished inference");
-        return recognitions;
+        return ImageUtil.makeImageTensor(scaledImage, modelConfig.getImageMean(), modelConfig.getImageStd());
     }
 
-    private float[] runSession(BufferedImage image, Graph model) {
-        try (Session session = new Session(model);
-             Tensor<Float> input = ImageUtil.makeImageTensor(image, modelConfig.getImageMean(), modelConfig.getImageStd())) {
-            List<Tensor<?>> outputs =
-                    session
-                            .runner()
-                            .feed(modelConfig.getInputLayerName(), input)
-                            .fetch(modelConfig.getOutputLayerName())
-                            .run();
-            try (Tensor<Float> classesT = outputs.get(0).expect(Float.class)) {
-                int maxObjects = (int) classesT.shape()[1];
-                return classesT.copyTo(new float[1][maxObjects])[0];
-            }
-        }
+    @Override
+    protected List<Recognition> convertToResult(Tensor<Float> output) {
+        int maxObjects = (int) output.shape()[1];
+        float[] result;
+        result = output.copyTo(new float[1][maxObjects])[0];
+        return convertToRecognitions(result);
     }
 
     private List<Recognition> convertToRecognitions(float[] classes) {
@@ -86,7 +75,7 @@ public class MobilenetV2Classifier implements Classifier {
 
     @PreDestroy
     public void tearDown() {
-        model.close();
+        release();
     }
 
 }
